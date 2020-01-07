@@ -4,7 +4,7 @@
 
 # Use bash for inline if-statements in test target
 SHELL:=bash
-OWNER:=jupyter
+OWNER:=clarkwu
 ARCH:=$(shell uname -m)
 
 # Need to list the images in build dependency order

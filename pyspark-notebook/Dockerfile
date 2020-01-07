@@ -1,14 +1,14 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-FROM jupyter/scipy-notebook
+FROM clarkwu/scipy-notebook
 
-LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
+LABEL maintainer="clarkwu"
 
 USER root
 
 # Spark dependencies
-ENV APACHE_SPARK_VERSION 2.2.0
-ENV HADOOP_VERSION 2.7
+ENV APACHE_SPARK_VERSION 2.2.3
+ENV HADOOP_VERSION 2.6
 
 RUN apt-get -y update && \
     apt-get install --no-install-recommends -y openjdk-8-jre-headless ca-certificates-java && \
